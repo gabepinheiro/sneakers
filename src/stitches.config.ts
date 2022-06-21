@@ -4,4 +4,5 @@ export const {
   styled,
   getCssText,
   theme,
+  globalCss,
 } = createStitches({})
