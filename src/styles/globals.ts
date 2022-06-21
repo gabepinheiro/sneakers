@@ -20,6 +20,10 @@ export const globalStyles = globalCss({
     fontSize: '1.6rem',
   },
 
+  'body, button, input, textarea': {
+    fontFamily: '"Kumbh Sans", sans-serif',
+  },
+
   button: {
     cursor: 'pointer',
     outline: 'none',
