@@ -1,7 +1,19 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { styled } from '~/stitches.config'
 import styles from '~/styles/Home.module.css'
+
+const Button = styled('button', {
+  backgroundColor: '#0070f3',
+  border: 0,
+  borderRadius: '100px',
+  cursor: 'pointer',
+  padding: '10px 15px',
+  '&:hover': {
+    opacity: 0.7,
+  },
+})
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +28,8 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href='https://nextjs.org'>Next.js!</a>
         </h1>
+
+        <Button>Button</Button>
 
         <p className={styles.description}>
           Get started by editing{' '}
